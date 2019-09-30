@@ -1,4 +1,4 @@
-const add = (x, y) => { return x + y }
+/*const add = (x, y) => { return x + y }
 
 const validate = async (event) => {
   console.log(`triggered validate on ${event.target.id}`)
@@ -49,3 +49,16 @@ document.addEventListener('click', event => {
 document.addEventListener('click', event => {
   if (event.target && event.target.id === 'getJokeButton') { updateWithJoke(event) }
 })
+*/
+
+function average()
+{
+  const guest=document.getElementById("guest").value;
+  const firstNumber=parseInt(document.getElementById("firstNumber").value);
+  const secondNumber=parseInt(document.getElementById("secondNumber").value);
+  const thirdNumber=parseInt(document.getElementById("thirdNumber").value);
+  const avg=(firstNumber+secondNumber+thirdNumber)/3;
+  document.getElementById("result").innerHTML=guest+", the average is:"+avg;
+
+}
+
